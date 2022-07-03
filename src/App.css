@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: row;
+  ;
+}
+
+.card{
+  border-radius: 10px;
+  background-color: lightgray;
+  width: 400px;
+  height: 400px;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+ 
+}
+.col1{
+  width: 50%;
+}
+.col2{
+  width: 50%;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 38px;
+}
+
+.button {
+  color: purple !important;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: lavender;
+  border: 2px solid;
+  border-color: purple;
+  position: relative;
+  border-radius: 5px;
+}
+.button:hover {
+  color: purple !important;
+  box-shadow: 0 4px 16px gray;
+  transition: all 0.3s ease;
+}
