@@ -19,7 +19,7 @@ function App() {
     <div className="App">
     {
       loading ?
-<SyncLoader color={"#9b62df"} loading={loading} size={30} />
+<SyncLoader color={"#4666FF"} loading={loading} size={30} />
        :
        <Weather/>
     } 
