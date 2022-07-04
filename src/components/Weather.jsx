@@ -40,23 +40,17 @@ const Weather = () => {
 
         }
 
-        if (isCelsious > 30){
-            document.body.style.backgroundImage = `url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg)`
+       
+        document.body.style.backgroundImage = `url(https://cdn2.vectorstock.com/i/1000x1000/77/16/weather-background-icon-vector-87716.jpg)`
         document.body.style.backgroundPosition = "center";
-        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundRepeat = "repeat";
         document.body.style.backgroundSize = "cover";
-        } else {
-            document.body.style.backgroundImage = `url(https://www.stormshieldapp.com/static/images/section1.1-bg.jpg)`
-        document.body.style.backgroundPosition = "center";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
-        }
 
         let date = new Date();
         let output = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0') + '/' + date.getFullYear();
         
         
-      
+      console.log(isCelsious);
 
         return (
             
@@ -67,12 +61,15 @@ const Weather = () => {
                 <div className='row'>
                 <div className='col1'>
                     <img src={` http://openweathermap.org/img/wn/${data.weather?.[0].icon}@2x.png`} style={{ fontSize: "10px" }} alt="" />
-                    <p>Temperature:{" "}{celsious.toFixed(2)}{" "}{isCelsious ? "°C." : "°F."}</p>
+                    <p><i className="fa-solid fa-temperature-high"></i>{" "}Temperature:{" "}{celsious.toFixed(2)}{" "}{isCelsious ? "°C." : "°F."}</p>
                 </div>
                 <div className='col2'>
+                    <i className="fa-solid fa-wind"></i>
                    <li>Wind speed:{" "}{data.wind?.speed} m/s</li>
+                   <i className="fa-solid fa-smog"></i>
                    <li>Humidity:{" "}{data.main?.humidity}%</li>
-                   <li>Clouds:{" "}{data.clouds?.all}%</li>
+                   <i className="fa-solid fa-cloud"></i>
+                   <li>Clouds:{" "}{data.clouds?.all}</li>
                     <p></p>
                 </div>
                 </div>

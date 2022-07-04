@@ -3,6 +3,7 @@ import './App.css'
 import Weather from './components/Weather'
 import SyncLoader from "react-spinners/SyncLoader";
 
+
 function App() {
   
   const [ loading, setLoading] = useState(false);
