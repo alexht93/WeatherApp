@@ -41,7 +41,7 @@ const Weather = () => {
         }
 
        
-        document.body.style.backgroundImage = `url(https://cdn2.vectorstock.com/i/1000x1000/77/16/weather-background-icon-vector-87716.jpg)`
+        document.body.style.backgroundImage = `url(https://www.noaa.gov/sites/default/files/styles/landscape_width_650/public/legacy/image/2019/Jun/iStock-477110708%20%281%29.jpg?itok=qLIDK-SD)`
         document.body.style.backgroundPosition = "center";
         document.body.style.backgroundRepeat = "repeat";
         document.body.style.backgroundSize = "cover";
