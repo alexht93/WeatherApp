@@ -10,7 +10,7 @@
 
 .card{
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: #4666FF;
   width: 400px;
   height: 400px;
 }
@@ -33,7 +33,7 @@ li{
 }
 
 .button {
-  color: yellow !important;
+  color: royalblue !important;
   font-size: 15px;
   font-weight: 500;
   padding: 0.5em 1.2em;
