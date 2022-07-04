@@ -54,7 +54,7 @@ const Weather = () => {
 
         return (
             
-            <div className='card' style={{color: "purple"}}>
+            <div className='card' style={{color: "yellow"}}>
                 <h1>Weather App</h1>
                 <h4>{data.name}{","}{" "}{data.sys?.country}.</h4>
                 <p>{output}</p>
