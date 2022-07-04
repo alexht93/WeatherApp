@@ -41,7 +41,7 @@ const Weather = () => {
         }
 
        
-        document.body.style.backgroundImage = `url(https://energyeducation.ca/wiki/images/a/ad/Weather-28719_640.png)`
+        document.body.style.backgroundImage = `url(https://cdn.dribbble.com/users/2129935/screenshots/12694549/media/ef7f3acd5ca3da6c0e492bbadda809a0.gif)`
         document.body.style.backgroundPosition = "center";
         document.body.style.backgroundRepeat = "repeat";
         document.body.style.backgroundSize = "cover";
